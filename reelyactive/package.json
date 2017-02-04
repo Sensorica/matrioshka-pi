@@ -1,0 +1,23 @@
+{
+  "name": "matrioshka-pi",
+  "version": "0.1.0",
+  "description": "Matrioshka Pi. We believe in an open Internet of Things.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "reelyActive",
+    "Raspberry Pi",
+    "Matrioshka"
+  ],
+  "dependencies": {
+    "hlc-server": ">=0.5.4",
+    "bluetooth-hci-socket": ">=0.5.0",
+    "serialport": ">=4.0.0"
+  },
+  "contributors": [
+    { "name": "Jeffrey Dungen" }
+  ],
+  "license": "MIT"
+}

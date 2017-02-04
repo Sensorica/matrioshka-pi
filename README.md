@@ -172,15 +172,22 @@ To test the picap at any time, run the following from the command line:
 Install Matrioshka software
 ---------------------------
 
-    mkdir ~/matrioshka
+From the command line, clone this repository in the pi user's home folder:
 
+    cd
+    git clone https://github.com/Sensorica/matrioshka-pi.git
 
+Install the reelyActive packages:
 
+    cd matrioshka-pi/reelyactive
+    npm install
 
+To make the reelyActive software and Pi Cap run on boot, edit /etc/rc.local:
 
+    sudo vi /etc/rc.local
 
+and add the following line above exit 0:
 
-
-
-
+    forever start /home/pi/matrioshka-pi/reelyactive/server.js
+    sleep 10; /home/pi/matrioshka-pi/picap/run &
 
